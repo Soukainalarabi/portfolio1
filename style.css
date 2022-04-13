@@ -1,31 +1,56 @@
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  
-  /* Carousel base class */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 32rem;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
-  
-  /* MARKETING CONTENT
--------------------------------------------------- */
+/* animation header */
+section{
+  /* width: 100%; */
+  height: 100vh;
+  background: linear-gradient(-45deg, #c4c7da 0%, #50505840 13%, #7c7a7f 25%, #c2b8c9 38%, #9c939c 50%, #b29fa6 62%, #d7c5c3 75%, #e0d0c4 87%, #c3b9a8 100%);
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* h1{
+  color: #fff;
+  background: rgba(255,255,255,.2);
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+} */
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+/* //////// */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+section{
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+
+  }
+.featurette-divider{
+    margin: 0px;
+}
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
@@ -90,10 +115,14 @@
     --bs-bg-opacity: 1;
     background-color: silver !important;
 }
+
   .form-control-dark {
     color: #fff;
     background-color: var(--bs-dark);
     border-color: var(--bs-gray);
+  }
+  .nav-link{
+    color: rgba(0,0,0,.5) !important;
   }
   .form-control-dark:focus {
     color: #fff;
@@ -106,7 +135,9 @@
     vertical-align: -.125em;
     fill: currentColor;
   }
-  
+  .text-silver{
+    color: rgba(0,0,0,.5);
+  }
   .text-small {
     font-size: 85%;
   }
@@ -809,4 +840,17 @@ textarea.input {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+
   }
+  /* @media (max-width:768px){
+   .container {
+           max-width: 612px;  
+}  
+.row {
+    width: none !important;
+    
+}
+.col-md-auto img{
+    width: 200px;
+    height: 250px;
+}} */
